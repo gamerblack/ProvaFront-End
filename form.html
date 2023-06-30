@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+
+        <head>
+            <meta charset=UTF-8>
+            
+            <link rel="stylesheet" href="reset.css">
+
+            <link rel="stylesheet" href="style.css">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <title>ProvaFront-End-Formulário</title>
+
+        </head>
+
+        <body>
+            
+            <header>
+
+                <h4>Loja de Bolo'S e Salgadado'S</h4>
+
+                <main class="form">
+
+                    <hr class="linha">
+
+                    <form class="formulário">
+
+                        <label for="nome" class="label"><b>Nome:</b></label>
+                        <input type="text" id="nome" class="area" required placeholder="Nome Completo">
+
+                        <!-- tipo, id, classe, required (reposta obrigatório), placeholder (nome que desaparece dps q digita) -->
+
+                        <!-- type:
+                            text
+                            email
+                            password
+                            tel
+                            radio(bolinha de selção)
+                            checkbox
+                            submit (botão)
+                        -->
+
+
+                        <label for="tel" class="label"><b>Telefone/Celular:</b></label>
+                        <input type="tel" id="tel" class="area" placeholder="(**) * *****-****" required>
+
+
+                        <label for="Endereço" class="label"><b>Endereço:</b></label>
+                        <input type="text" id="Endereço" class="area" placeholder="Rua Mãe Joana, Bairro, Condomínio nº72">
+
+
+                        <legend  class="label">O que Vamos Pedir Hoje?</legend>
+
+                        <select name="option" id="option" class="section" required>
+
+                            <option value="option" checked> Bolo</option>
+
+                            <option value="option"> Salgados</option>
+
+                            <option value="option"> Doces</option>
+
+                            <option value="option"> Variádos</option>
+
+                        </select>
+
+                        <label for="obs" class="label">Descrição do Pedido</label>
+                        <textarea name="" id="obs" cols="80" class="obs" required rows="5" placeholder="Digite aqui..."></textarea>
+
+                        <!-- cols= caracteres em cada linha
+                        rows= quant de linhas -->
+
+                            <label for="data" class="label"><b>Data de Entrega:</b></label>
+                            <input type="text" id="data" class="area" placeholder="dd/mm" required>
+
+
+                        <Fieldset class="sel">
+
+                            <legend class="label"><b>Forma de Pagamento:</b></legend>
+
+                            <label for="op-manhã" value="manhã" class="op">
+
+                                <input name="hora" type="radio" id="op-manhã" checked>Cartão
+
+                            </label>
+
+                            <label for="op-tarde" value="tarde" class="op">
+
+                                <input name="hora" type="radio" id="op-tarde">Dinheiro
+
+                            </label>
+
+                            <label for="op-noite" value="noite"  class="op">
+
+                                <input name="hora" type="radio" id="Noite">Pix
+
+                            </label>
+
+                            <!-- caso ja queira que uma opção venha marcada coloque "checked" no final o input -->
+
+                        </Fieldset>
+
+                        <label class="label" for="checkbox">
+
+                            <input type="checkbox" id="checkbox"> Receber Notificação Via Whattzap Quando Sair Para a Entrega
+
+                        </label>
+
+                        <!-- Caso tenha mais e uma opção seria bom colocar entro do fiedset -->
+
+                        <input type="submit" class="enviar" value="Enviar"> 
+                        <!-- Nesse caso o value = escita no botão -->
+
+                    </form>
+
+                </section>
+                </main>
+
+            </header>
+
+            <footer>
+                <p><label for="text"><h3>Bem Vindos!</h3></label></p>
+                <p>Algum Problema? <a href="">Entre em Contato pelo Site!</a></p>
+                <p><a href="">Termos e Condições</a></p>
+                <p>Tel: (**) * ****-****</p>
+
+            </footer>
+
+        </body>
+
+    </html>
